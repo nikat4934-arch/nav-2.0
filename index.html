@@ -40,23 +40,32 @@
         <section class="yourLetter">
             <div class="writing">
                 <h2>Do you want to see us?</h2>
-                <form action="">
+                <form action="" method="post"> <!--Форма минимум содержить URL-адресс, куда будет отправляться инфа и один из способов HTTP-методом отправки данные-->
+                    <p>
+                        <label for="name">What's your name?</label><br> <!--for и id связаны, оттого им нужно одно имя на двоих, дабы данные передавались цельно-->
+                        <input type="text" id="name" name="user_name"/><br>
+                    </p>
 
-                    <label for="text">What's your name?</label><br>
-                    <input type="text"><br>
+                    <p>
+                        <label for="mail">Your email:</label><br>
+                        <input type="email" id="mail" name="user_email"/><br>
+                    </p>
 
-                    <label for="email">Your email:</label><br>
-                    <input type="email" name="" id=""><br>
+                    <p>
+                        <label for="msg">Get a message!</label><br>
+                        <textarea id="msg" name="user_message" >
+                            Hi, Mr.Ball. I fucked your wife)
+                        </textarea><br>
+                    </p>
 
-                    <label for="message">Get a message!</label><br>
-                    <input type="message" name=""><br><!--HOW-->
+                    <p>
+                        <label for="checkbox">I'm agree with <a href="">условия конфиги</a></label>
+                        <input type="checkbox" name="checkbox" id="checkbox"><br>
+                    </p>
 
-                    <label for="checkbox">I'm agree with <a href="">условия конфиги</a></label>
-                    <input type="checkbox" name="" id=""><br>
-
-                    <label for="button"></label>
-                    <input type="submit" value="Отправить">
-
+                    <p>
+                        <button type="submit">Send your message</button>
+                    </p>
                 </form>
             </div>
         </section>

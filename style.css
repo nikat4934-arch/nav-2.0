@@ -43,7 +43,6 @@ header ul {
     text-align: center;
     justify-content: center;
     gap: 200px;
-
     list-style: none;
 }
 
@@ -60,11 +59,33 @@ main h1 {
 .writing {
     background-color: aqua;
     border: 2px solid;
-    width: 500px;
+    width: 700px;
+    height: 500px;
     margin: auto;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
+}
+
+.writing label {
+    text-align: center;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+    vertical-align: top;
+  /* Provide space to type some text */
+    height: 20em;
+    width: 600px;
+}
+
+input:focus,
+textarea:focus {
+  /* Set the outline width and style */
+    outline-style: solid;
+  /* To give a little highlight on active elements */
+    outline-color: black;
 }
 
 
